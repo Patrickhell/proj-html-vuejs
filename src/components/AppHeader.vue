@@ -31,8 +31,8 @@
                      JOURNAL
                    </a>
                 </li>
-                <li >
-                   <button>
+                <li class="aboutDonate">
+                   <button class="btn-donate">
                      DONATE
                    </button>
                 </li>
@@ -99,9 +99,7 @@ header{
     margin-top:6.5rem
 }
 
-ul{
-    list-style-type: none;
-}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -167,6 +165,11 @@ h1{
 
 .btn-ourMission{
 border: 2px solid white;
+
+}
+
+.aboutDonate:hover .btn-donate{
+    background-color:#262E44 ;
 
 }
 .button_aboutMission:hover .btn-ourMission{
