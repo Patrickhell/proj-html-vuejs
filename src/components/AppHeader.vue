@@ -1,8 +1,8 @@
 <template>
     <header>
-        <div class="container-fluid d-flex  text-white">
+        <div class="navBar container-fluid d-flex justify-content-between  text-white">
             <img class="logo" src="../assets/img/HelloIMG1669149314369.png " alt="logo_charity" style="width: 300px;"  >
-            <ul class="  d-flex ">
+            <ul class=" navBarRightSide d-flex ">
                 <li class="link" >
                   <a href="#" style="color:#FEC96B;">
                     HOME
@@ -40,50 +40,25 @@
             </ul>
 
         </div>
-        <div class="text-white text-center ">
-            <div class="col-12">
-                <div class="row ">
-                    <div class="col-11 header-title">
-                        <h1 class="mb-4" >
-                          MAKE A DIFFERENCE
-                        </h1>
-                        <h6 class="mb-5 ">
-                           As long as poverty, injustice & inequality persit, none of us can truly rest.
-                        </h6>
-                        <div class="d-flex justify-content-center">
-                            <div class="button_aboutMission ">
-                                <button class="btn-ourMission bg-transparent">
-                                    OUR MISSION
-                                </button >
-                            </div>
-                            <div class="button_aboutDonate ">
-                                <button class="btn-donateNow bg-transparent" >
-                                  DONATE NOW
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="header-task">
-                            <div class="task-container">
-                                <div class="smallContainer  mb-2 ">
-                                    <div class="task-prebuilts pt-3">
-                                       <i class="fa-solid fa-gift"></i>
-                                       <p class="my_font bold">Prebuilts</p>
-                                    </div>
-
-                                </div>
-                                <div class="smallContainer">
-                                    <div class="task-buyNow pt-3">
-                                       <i class="fa-solid fa-cart-shopping iconsFont"></i>
-                                       <p class="my_font bold">Buy Now</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="text-white text-center header-title me-auto">
+            <h1 class="mb-4" >
+                MAKE A DIFFERENCE
+            </h1>
+            <h6 class="mb-5 ">
+                As long as poverty, injustice & inequality persit, none of us can truly rest.
+            </h6>
+            <div class="d-flex justify-content-center">
+                <div class="button_aboutMission ">
+                    <button class="btn-ourMission bg-transparent">
+                        OUR MISSION
+                    </button >
                 </div>
-            </div>   
+                <div class="button_aboutDonate ">
+                    <button class="btn-donateNow bg-transparent" >
+                        DONATE NOW
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
    
@@ -107,36 +82,26 @@ export default {
 
 header{
     background-image: url('../assets/img/HelloIMG1669149393797.jpeg');
-    height: 720px;
+     background-position-x: center;
+     height:800px;
+     background-position-y:80% ;
     background-size: cover;
     background-attachment:fixed;
 }
-.task-buyNow, .task-prebuilts{
-    width:70px;
-    height: 70px;
-    background: white;
-    color:#262626;
-    border-radius: 10%;
 
-
+.navBarRightSide{
+    padding-right: 7rem;
 }
 
 .header-title{
-    padding-left: 6rem;
-}
-.iconsFont{
-    font-size: 20px;
-}
+    margin-top:7%;
+    
+  
 
-.my_font{
-    font-size: 12px;
-}
 
-.header-task{
-    padding-right:2rem
 }
 div img.logo{
-   margin: 5.5rem; 
+   margin: 3rem; 
 }
 
 h1{
@@ -149,7 +114,7 @@ li button{
     height: 45px;
     background-color: #FEC96B;
     border: none;
-    margin-top: 6rem;
+    margin-top: 4rem;
     color: white;
 }
 .btn-ourMission, .btn-donateNow{
@@ -167,7 +132,7 @@ border: 2px solid white;
 
 .link{
     margin-right: 3.5rem;
-    margin-top:6.5rem
+    margin-top:4.5rem
 }
 
 a{
