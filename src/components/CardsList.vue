@@ -1,4 +1,5 @@
 <template>
+   
     <SingleCard v-for="cardObj in cardsList" :key="cardObj"
                         :cardElement = "cardObj" />
   
@@ -12,7 +13,7 @@ export default {
     
         data(){
             return{ 
-                  
+
                 cardsList :[
 
                 {
